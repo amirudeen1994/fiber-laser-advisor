@@ -20,7 +20,8 @@ if API_KEY:
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
-        st.image(image, caption="Uploaded Cutting Sample", use_column_width=True)
+        st.image(image, caption="Uploaded Cutting Sample", use_container_width=True)
+
 
         if st.button("Analyze Quality 🔍"):
             with st.spinner("Analyzing cut edge defects and calculating optimal parameters..."):
