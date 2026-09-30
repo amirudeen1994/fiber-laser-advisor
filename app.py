@@ -45,7 +45,7 @@ if API_KEY:
                        - Laser Power / Duty Cycle (%)
                     4. **Engineer Tips**: Checks for nozzle centering, protective lens cleanliness, or focus calibration.
                     """
-                    model = genai.GenerativeModel('gemini-2.5-flash')
+                    model = genai.GenerativeModel('gemini-3.8-flash')
                     response = model.generate_content([prompt, image])
                     st.success("Analysis Complete!")
                     st.markdown(response.text)
